@@ -14,41 +14,42 @@
 
 <body>
 
+    <div class="app">
+        <header class="header">
+            <a href="/" class="header__logo">
+                <img src="./img/logo.svg" alt="Логотип: КіноПульс" class="logo-image">
+            </a>
 
-    <header class="header">
-        <a href="/" class="header__logo">
-            <img src="./img/logo.svg" alt="Логотип: КіноПульс" class="logo-image">
-        </a>
+            <a href="#" class="header__user">
+                <span class="user-name">Микола</span>
+                <img src="./img/avatarka.png" alt="Аватарка" class="user-photo">
+            </a>
+        </header>
 
-        <a href="#" class="header__user">
-            <span class="user-name">Микола</span>
-            <img src="./img/avatarka.png" alt="Аватарка" class="user-photo">
-        </a>
-    </header>
-
-    <div class="content">
-        <img src="./img/film-logo.png" alt="Логотип фільму">
-        <div class="content__tags">
-            <span class="tag">2021</span>
-            <span class="tag">бойовик, фантастика</span>
-            <span class="tag">США</span>
-            <span class="tag age">18+</span>
-        </div>
-
-        <div class="content__text">
-            Продовження легендарного фільму із 90-х. Попереду смертельна битва, де залишиться тільки найсильніший
-        </div>
-
-        <div class="content__btn">
-
-            <span class="btn-buy">Замовити фільм</span>
-            <div class="btn-watch">
-                <img src="./img/play.svg" alt="Дивтись" class="wathc-img">
-                <span>Дивитись трейлер</span>
+        <section class="film">
+            <img src="./img/film-logo.png" class="film-logo" alt="Mortal Kombat">
+            <div class="tags">
+                <span class="date">2021</span>
+                <span class="genre">бойовик, фантастика</span>
+                <span class="country">США</span>
+                <span class="age">18+</span>
             </div>
 
+            <p class="description">
+                Продовження легендарного фільму із 90-х. Попереду смертельна битва, де залишиться тільки найсильніший
+            </p>
 
-        </div>
+            <div class="button-group">
+
+                <button class="button button-primary">Замовити фільм</button>
+                <button class="button button-default">
+                    <img src="./img/play.svg" alt="Дивтись" class="button-icon">
+                    <span class="button-text">Дивитись трейлер</span>
+                </button>
+
+            </div>
+
+        </section>
 
     </div>
 
