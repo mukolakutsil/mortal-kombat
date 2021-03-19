@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -41,12 +42,29 @@
 
             <div class="button-group">
 
-                <button class="button button-primary">Замовити фільм</button>
-                <button class="button button-default">
+                <a data-fancybox data-src="#buy" href="javascript:;" class="button button-primary">
+                    Замовити фільм
+                </a>
+                <a data-fancybox href="https://www.youtube.com/watch?v=fb1BF9B1MGQ" class="button button-default">
                     <img src="./img/play.svg" alt="Дивтись" class="button-icon">
                     <span class="button-text">Дивитись трейлер</span>
-                </button>
+                </a>
 
+
+
+            </div>
+
+            <div style="display: none;" id="buy">
+                <form class="form" action="#">
+                    <h1 class="form-title">Вкажіть свою пошту</h1>
+                    <input class="form-input" type="email" placeholder="Ваш email">
+                    <a data-fancybox data-src="#response" href="javascript:;" class="button" type="submit">Замовити</a>
+                </form>
+            </div>
+
+            <div style="display: none;" id="response">
+                <h1 class="response-title">Дякуємо за замовлення)</h1>
+                <h2 class="response-text">Ми з Вами зв'яжемося</h2>
             </div>
 
         </section>
@@ -55,6 +73,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/jquery.vide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
